@@ -1,0 +1,62 @@
+/* shiggy home button*/
+[data-list-item-id="guildsnav___home"] {
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=256&quality=lossless);
+}
+/* shiggy emoji picker*/
+.sprite__294b3.spriteColored__9a869 {
+    background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
+    background-size: 24px;
+}
+
+.sprite__294b3.spriteGreyscale__750f4 {
+    mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
+    mask-size: 24px;
+}
+/* replace wumpus relax with shiggy relax*/
+.wumpus__3d214 {
+    scale: 1;
+    content: url(https://media.discordapp.net/stickers/1039992459209490513.png);
+}
+.focusLock__10aa5 .text-md-normal__4afad {
+    font-size: 0;
+}
+.focusLock__10aa5 .text-md-normal__4afad::after {
+    font-size: 16px;
+    content: "Relax with Shiggy for as long as you need."
+}
+/* replace logo with shiggy on load*/
+@import url(https://raw.githubusercontent.com/Blisterexe/shiggy-loader/main/main.css); 
+/* Shiggy badges */
+@import url(https://raw.githubusercontent.com/lumap/css-snippets/main/shiggy-badges.css);
+/* Hide Discord account information */
+[class^="accountProfileCard"] [class*="fieldSpacer"] h3+div:has(button) * { color: transparent!important; }
+[class^="accountProfileCard"] [class*="fieldSpacer"]:hover h3+div * { color: var(--header-primary)!important; }
+[class^="accountProfileCard"] [class*="fieldSpacer"]:hover h3+div button * {
+    color: var(--text-link)!important;
+    -webkit-text-security: none; }
+[class^="accountProfileCard"] [class*="fieldSpacer"]:hover span:has(button[aria-label^="Reveal"]) { -webkit-text-security: disc; }
+[class^="accountProfileCard"] [class*="fieldSpacer"] span:has(button):before {
+    color: var(--header-secondary);
+    content: var(--redacted-text);
+    font-size: initial; }
+[class^="accountProfileCard"] [class*="fieldSpacer"]:hover span:before, [class^="userSettingsSecurity-"] [class*="description-"] { display: none; }
+
+:root {
+   --redacted-text: "shiggy"; /*censor text (Default: "shiggy")
+}
+   /* shiggy the shigger */
+[class^="panels-3wFtMD"]::before {
+    content: "";
+    width: 47px;
+    height: 47px;
+    left: 185px;
+    margin-top: -47px;
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=48&name=shiggy%7E1&quality=lossless');
+}
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=64&quality=lossless);
+    transform: scale(0.32) translate(-100%, -110%);
+    display: inline-block;
+}
